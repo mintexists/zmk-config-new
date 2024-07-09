@@ -1,0 +1,2 @@
+config SHIELD_WHITEBOARD
+    def_bool $(shields_list_contains,whiteboard)
