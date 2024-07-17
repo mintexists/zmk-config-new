@@ -1,0 +1,8 @@
+file_format: "1"
+id: whiteboard
+name: whiteboard
+type: shield
+url: https://github.com/enbyautumn/WhiteBoard/
+requires: [pro_micro]
+features:
+  - keys
