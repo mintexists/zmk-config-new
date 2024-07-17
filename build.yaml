@@ -18,4 +18,5 @@
 #
 ---
 
-shield: [ "whiteboard" ]
+include:
+  - board: whiteboard
