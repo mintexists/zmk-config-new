@@ -1,5 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
+&left_encoder {
+    status = "okay";
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -56,7 +60,14 @@
         label = "left_encoder";
         a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
+        steps = <80>;
     };
     
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
+
+
 };
