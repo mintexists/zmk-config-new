@@ -55,12 +55,12 @@
         >;
     };
 
-    left_encoder: left_encoder {
+    left_encoder: encoder_left {
         compatible = "alps,ec11";
-        label = "left_encoder";
         a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
+        status = "disabled";
     };
     
     sensors: sensors {
