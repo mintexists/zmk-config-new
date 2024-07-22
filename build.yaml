@@ -21,3 +21,4 @@
 include:
   - board: nrfmicro_13
     shield: whiteboard
+    snippet: zmk-usb-logging
